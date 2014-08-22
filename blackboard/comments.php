@@ -15,9 +15,9 @@
 	  <ol class="commentlist comment-list">
 		<?php
           wp_list_comments(array(
-            'style'      => 'ol',
+            'style' => 'ol',
             'short_ping' => true,
-            'avatar_size'=> 50,
+            'avatar_size' => 50,
             'format' => 'html5'
           ));
         ?>

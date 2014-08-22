@@ -5,7 +5,8 @@ Theme URI: http://github.com/sulfureous/blackboard-theme
 Author: Sulfureous
 Author URI: http://www.pragmaticode.com
 Description: A completely naked theme with all the files necessary to make a legit WordPress Theme. This theme is built with camelCase in mind, it has startup WordPress default CSS selectors and a lot of native WordPress functionality to make the experience a complete one.
-Version: 2.0
+Tags: Naked Theme, For Developers, Empty, Barebones, Empty Theme Structure, Blank Theme, Basic Functions, WordPress Stock CSS Selectors
+Version: 2.1
 */
 
 /*
@@ -18,6 +19,18 @@ Version: 2.0
   Blue: #00F;
     
 */
+
+/*
+  =-=-=-=
+    Responsive Styles
+  =-=-=-=
+*/
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
 
 /*
   =-=-=-=
@@ -72,3 +85,82 @@ Version: 2.0
   /* =-=-=-= Slider =-=-=-= */
 
   /* =-=-=-= Lightbox =-=-=-= */
+  
+/*
+  =-=-=-=
+    WordPress Stock CSS Selectors
+  =-=-=-=
+*/
+
+  /* =-=-=-= WYSIWYG Editor (Responsive) =-=-=-= */
+  
+  .entry-content img { margin: 0 0 1.5em 0; }
+  .alignleft, img.alignleft { margin-right: 1.5em; display: inline;	float: left; }
+  .alignright, img.alignright {	margin-left: 1.5em;	display: inline; float: right; }
+  .aligncenter, img.aligncenter { margin-right: auto; margin-left: auto; display: block; clear: both; max-width: 100%; height: auto; }
+  .alignnone, img.alignnone { max-width: 100%; height: auto; }
+  .wp-caption.alignnone img { max-width: 100%; height: auto; }
+  .wp-caption {	margin-bottom: 1.5em; text-align: center; padding-top: 5px; }
+  .wp-caption img {	border: 0 none;	padding: 0;	margin: 0; }
+  .wp-caption.aligncenter[style] { max-width: 100%; }
+  .wp-caption.aligncenter img { max-width: 100%; height: auto; }
+  .wp-caption p.wp-caption-text { line-height: 1.5; font-size: 10px; margin: 0; }
+  .wp-smiley { margin: 0; max-height: 1em; }
+  blockquote.left {	margin-right: 20px;	text-align: right; margin-left: 0; width: 33%; float: left; }
+  blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 33%; float: right; }
+
+  /* =-=-=-= Native Gallery Styles =-=-=-= */
+
+  .gallery dl { }
+  .gallery dt { }
+  .gallery dd { }
+  .gallery dl a { }
+  .gallery dl img { }
+  .gallery-caption { }
+  .size-full { }
+  .size-large { }
+  .size-medium { }
+  .size-thumbnail { }
+
+  /* =-=-=-= Comments with Nested and Admin Styles =-=-=-= */
+
+  ol.commentlist li.even { }
+  ol.commentlist li.odd { }
+  ol.commentlist li.parent { }
+  ol.commentlist li.thread-alt { }
+  ol.commentlist li.thread-even { }
+  ol.commentlist li.thread-odd { }
+  ol.commentlist { }
+  ol.commentlist li { }
+  ol.commentlist li.alt { }
+  ol.commentlist li.bypostauthor { }
+  ol.commentlist li.byuser { }
+  ol.commentlist li.comment-author-admin { }
+  ol.commentlist li.comment { }
+  ol.commentlist li.comment div.comment-author { }
+  ol.commentlist li.comment div.vcard { }
+  ol.commentlist li.comment div.vcard cite.fn { }
+  ol.commentlist li.comment div.vcard cite.fn a.url { }
+  ol.commentlist li.comment div.vcard img.avatar { }
+  ol.commentlist li.comment div.vcard img.avatar-32 { }
+  ol.commentlist li.comment div.vcard img.photo { }
+  ol.commentlist li.comment div.vcard span.says { }
+  ol.commentlist li.comment div.commentmetadata { }
+  ol.commentlist li.comment div.comment-meta { }
+  ol.commentlist li.comment div.comment-meta a { }
+  ol.commentlist li.comment p { }
+  ol.commentlist li.comment ul { }
+  ol.commentlist li.comment div.reply { }
+  ol.commentlist li.comment div.reply a { }
+  ol.commentlist li.comment ol.children { }
+  ol.commentlist li.comment ol.children li { }
+  ol.commentlist li.comment ol.children li.alt { }
+  ol.commentlist li.comment ol.children li.bypostauthor { }
+  ol.commentlist li.comment ol.children li.byuser { }
+  ol.commentlist li.comment ol.children li.comment { }
+  ol.commentlist li.comment ol.children li.comment-author-admin { }
+  ol.commentlist li.comment ol.children li.depth-2 { }
+  ol.commentlist li.comment ol.children li.depth-3 { }
+  ol.commentlist li.comment ol.children li.depth-4 { }
+  ol.commentlist li.comment ol.children li.depth-5 { }
+  ol.commentlist li.comment ol.children li.odd { }

@@ -1,0 +1,13 @@
+@charset utf-8;
+/*
+Theme Name: Blackboard
+Theme URI: http://github.com/sulfureous/blackboard-theme
+Author: Sulfureous
+Author URI: http://www.pragmaticode.com
+Description: A completely naked theme with all the files necessary to make a legit WordPress Theme. This theme is built with camelCase in mind, it has startup WordPress default CSS selectors and a lot of native WordPress functionality to make the experience a complete one.
+Tags: Naked Theme, For Developers, Empty, Barebones, Empty Theme Structure, Blank Theme, Basic Functions, WordPress Stock CSS Selectors
+Version: 2.1
+Template: blackboard
+*/
+
+@import url("../blackboard/style.css");
