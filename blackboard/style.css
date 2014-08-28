@@ -6,7 +6,7 @@ Author: Sulfureous
 Author URI: http://www.pragmaticode.com
 Description: A completely naked theme with all the files necessary to make a legit WordPress Theme. This theme is built with camelCase in mind, it has startup WordPress default CSS selectors and a lot of native WordPress functionality to make the experience a complete one.
 Tags: Naked Theme, For Developers, Empty, Barebones, Empty Theme Structure, Blank Theme, Basic Functions, WordPress Stock CSS Selectors
-Version: 2.1
+Version: 2.1.1
 */
 
 /*
@@ -43,7 +43,85 @@ Version: 2.1
     Helper Classes
   =-=-=-=
 */
-
+ 
+  /* =-=-=-= Font Helpers =-=-=-= */
+  
+  .smallness {
+    font-size: 10px;
+  }
+  .boldness {
+    font-weight: bold;
+  }
+  .italicness {
+    font-style: italic;
+  }
+  .shadowness {
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+  }
+  .toUpper {
+    text-transform: uppercase;
+  }
+  .toLower {
+    text-transform: lowercase;
+  }
+  .toCapitalize {
+    text-transform: capitalize;
+  }
+  .highlightPrimary {
+    color: #f00;
+  }
+  .hightlightSecondary {
+    color: #100;
+  }
+  
+  /* =-=-=-= Alignment Helpers =-=-=-= */
+  
+  .alignLeft {
+    text-align: left;
+  }
+  .alignCenter {
+    text-align: center;
+  }
+  .alignRight {
+    text-align: right;
+  }
+  .alignMiddle {
+    vertical-align: middle;
+  }
+  .floatLeft {
+    float: left;
+  }
+  .floatRight {
+    float: right;
+  }
+  .floatNone {
+    float: none;
+  }
+  
+  /* =-=-=-= Custom Helpers =-=-=-= */
+  
+  .reqChar {
+    color: #f00;
+  }
+  .noMarPad {
+    margin: 0;
+    padding: 0;
+  }
+  .noMar {
+    margin: 0;
+  }
+  .noPad {
+    padding: 0;
+  }
+  .wrapCont {
+    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .boxShadow {
+    box-shadow: 2px 0 10px rgba(0,0,0,0.25);
+  }
+  
 /*
   =-=-=-=
     Scaffolding
