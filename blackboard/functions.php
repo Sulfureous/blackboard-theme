@@ -6,17 +6,23 @@
   =-=-=-=
 */
 
-// Add featured images support
+// Add theme support for Featured Images
 add_theme_support('post-thumbnails');
 
-// Add Custom background support
-add_custom_background();
+// Add theme support for Custom Background
+add_theme_support('custom-background');
 
-// Add the Theme "Menus" support
+// Add theme support for Custom Header
+add_theme_support('custom-header');	
+
+// Add theme support for Automatic Feed Links
+add_theme_support('automatic-feed-links');
+
+// Add theme support for Menus
 add_theme_support('menus');
 
-// Add Post Format Theme Support
-add_theme_support('post-formats', array(
+// Add theme support for Post Formats
+/* add_theme_support('post-formats', array(
   'aside',
   'gallery',
   'link',
@@ -26,13 +32,24 @@ add_theme_support('post-formats', array(
   'video',
   'audio',
   'chat'
-));
+));*/
+
+// Add Editor Style Support
+function my_theme_add_editor_styles() {
+  add_editor_style();
+}
+add_action('after_setup_theme', 'my_theme_add_editor_styles');
 
 // No more WordPress version on the header
 function wp_remove_version(){
   return '<!--This is Blackboard-->';
 }
 add_filter('the_generator', 'wp_remove_version');
+
+// Set the content width for oEmbed media other forms of media
+if(!isset($content_width)){
+  $content_width = 600;
+}
 
 // Add .has_thumb class to post if there's a featured image
 function has_thumb_class($classes){
@@ -43,18 +60,6 @@ function has_thumb_class($classes){
   return $classes;
 }
 add_filter('post_class', 'has_thumb_class');
-
-// Removes trackbacks from the comments count
-function comment_count($count){
-  if(!is_admin()){
-    global $id;
-    $comments_by_type = &separate_comments(get_comments('status=approve&post_id=' . $id));
-    return count($comments_by_type['comment']);
-  } else {
-    return $count;
-  }
-}
-add_filter('get_comments_number', 'comment_count', 0);
 
 // Encourage RSS subscribers to comment on posts
 function rss_comment_footer($content){
@@ -71,7 +76,7 @@ add_filter('login_errors',create_function('$a', "return null;"));
 
 // Excerpt Read More Ellipsis
 function custom_excerpt_ellipsis($more){
-  return '...<a href="'.get_permalink().'" class="readMoreLink">Read More</a>';
+  return '<p><a href="'.get_permalink().'" class="readMoreLink">Read More</a></p>';
 }
 add_filter('excerpt_more', 'custom_excerpt_ellipsis');
 
@@ -115,5 +120,16 @@ register_sidebar(array(
   'before_title' => '<h3 class="widgetTitle">',
   'after_title' => '</h3>'
 ));
+
+// Add Support for Post Pagination
+function custom_nextpage_links($defaults) {
+  $args = array(
+    'before' => '<div class="my-paginated-posts"><p>' . __('Sections &#151;','blackboard'),
+    'after' => '</p></div>',
+  );
+  $r = wp_parse_args($args, $defaults);
+  return $r;
+}
+add_filter('wp_link_pages_args','custom_nextpage_links');
 
 ?>

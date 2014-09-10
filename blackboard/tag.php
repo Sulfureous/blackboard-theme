@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <p><?php printf(__('Tag Archives: %s', 'blvckbrd'), '<span>'.single_tag_title('', false).'</span>'); ?></p>
+  <p><?php printf(__('Tag Archives: %s', 'blackboard'), '<span>'.single_tag_title('', false).'</span>'); ?></p>
 
   <?php if(tag_decription != ''):?>
     <div class="tagDescriptionCont"><?php echo tag_description(); ?></div>
@@ -13,8 +13,8 @@
       <?php the_excerpt(); ?>
     </article>
   <?php endwhile; else: ?>
-    <p><?php _e('There are no posts here?!', 'blvckbrd'); ?></p>
-    <p><?php _e('We apologize for any inconvenience, please go back on your browser.', 'blvckbrd'); ?></p>
+    <p><?php _e('There are no posts here?!', 'blackboard'); ?></p>
+    <p><?php _e('We apologize for any inconvenience, please go back on your browser.', 'blackboard'); ?></p>
   <?php endif; ?>
 
 <?php get_footer(); ?>

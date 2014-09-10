@@ -12,17 +12,19 @@
 	<?php if($comments) : ?>
       <h3><?php comments_number('No comments', 'One comment', '% comments'); ?></h3>
 
-	  <ol class="commentlist comment-list">
-		<?php
-          wp_list_comments(array(
-            'style' => 'ol',
-            'short_ping' => true,
-            'avatar_size' => 50,
-            'format' => 'html5'
-          ));
-        ?>
-	  </ol>
-
+      <ol class="commentlist comment-list">
+      <?php
+		wp_list_comments( array(
+		  'style' => 'ol',
+		  'short_ping' => true,
+		  'avatar_size' => 50,
+		  'format' => 'html5',
+		));
+      ?>
+      </ol>
+      <?php paginate_comments_links(); ?>
+      
+      <?php $trackback = ''; ?>
 	  <?php if ($trackback == true) { ?>
         <h3>Trackbacks</h3>
 		  <ol>
@@ -36,14 +38,14 @@
 	  <?php } ?>
       
 	<?php else : ?>
-	  <p><?php _e('No comments yet.', 'blvckbrd'); ?></p>
+	  <p><?php _e('No comments have been made yet.', 'blackboard'); ?></p>
 	<?php endif; ?>
     
     <hr>
 	
 	<?php
 	  comment_form(array(
-	    'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label></p><p><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+	    'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun', 'blackboard' ) . '</label></p><p><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 	    'cancel_reply_link' => '<div class="cancelReplyCont"><span>Cancel Reply</span></div>'
 	  ));
 	?>

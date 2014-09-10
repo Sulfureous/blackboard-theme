@@ -5,7 +5,10 @@ Theme URI: http://github.com/sulfureous/blackboard-theme
 Author: Sulfureous
 Author URI: http://www.pragmaticode.com
 Description: A completely naked theme with all the files necessary to make a legit WordPress Theme. This theme is built with camelCase in mind, it has startup WordPress default CSS selectors and a lot of native WordPress functionality to make the experience a complete one.
-Tags: Naked Theme, For Developers, Empty, Barebones, Empty Theme Structure, Blank Theme, Basic Functions, WordPress Stock CSS Selectors
+Tags: white, custom-background, custom-header, custom-menu, editor-style, featured-images, post-formats, threaded-comments, translation-ready
+Text Domain: blackboard
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.htm
 Version: 2.1.1
 */
 
@@ -13,6 +16,8 @@ Version: 2.1.1
   =-=-=-=
     The Colors
   =-=-=-=
+  
+  The idea here is to use your primary colors so they are easy to find and use over and over in your CSS.
   
   Red: #F00;
   Green: #0F0;
@@ -26,11 +31,21 @@ Version: 2.1.1
   =-=-=-=
 */
 
-@media (min-width: 768px) { }
+@media (max-width: 767px) { 
+	
+}
 
-@media (min-width: 992px) { }
+@media (min-width: 768px) {
+	
+}
 
-@media (min-width: 1200px) { }
+@media (min-width: 992px) {
+	
+}
+
+@media (min-width: 1200px) {
+	
+}
 
 /*
   =-=-=-=
@@ -170,35 +185,14 @@ Version: 2.1.1
   =-=-=-=
 */
 
-  /* =-=-=-= WYSIWYG Editor (Responsive) =-=-=-= */
+  /* =-=-=-= Required WordPress Classes =-=-=-= */
   
-  .entry-content img { margin: 0 0 1.5em 0; }
-  .alignleft, img.alignleft { margin-right: 1.5em; display: inline;	float: left; }
-  .alignright, img.alignright {	margin-left: 1.5em;	display: inline; float: right; }
-  .aligncenter, img.aligncenter { margin-right: auto; margin-left: auto; display: block; clear: both; max-width: 100%; height: auto; }
-  .alignnone, img.alignnone { max-width: 100%; height: auto; }
-  .wp-caption.alignnone img { max-width: 100%; height: auto; }
-  .wp-caption {	margin-bottom: 1.5em; text-align: center; padding-top: 5px; }
-  .wp-caption img {	border: 0 none;	padding: 0;	margin: 0; }
-  .wp-caption.aligncenter[style] { max-width: 100%; }
-  .wp-caption.aligncenter img { max-width: 100%; height: auto; }
-  .wp-caption p.wp-caption-text { line-height: 1.5; font-size: 10px; margin: 0; }
-  .wp-smiley { margin: 0; max-height: 1em; }
-  blockquote.left {	margin-right: 20px;	text-align: right; margin-left: 0; width: 33%; float: left; }
-  blockquote.right { margin-left: 20px; text-align: left; margin-right: 0; width: 33%; float: right; }
-
-  /* =-=-=-= Native Gallery Styles =-=-=-= */
-
-  .gallery dl { }
-  .gallery dt { }
-  .gallery dd { }
-  .gallery dl a { }
-  .gallery dl img { }
-  .gallery-caption { }
-  .size-full { }
-  .size-large { }
-  .size-medium { }
-  .size-thumbnail { }
+  .sticky {
+	background: rgba(0,0,0,0.2);
+  }
+  .post {
+    word-wrap: break-word;
+  }
 
   /* =-=-=-= Comments with Nested and Admin Styles =-=-=-= */
 

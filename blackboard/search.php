@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <p><?php _e('You searched for: ', 'blvckbrd')?><?php the_search_query(); ?></p>
+  <p><?php _e('You searched for: ', 'blackboard')?><?php the_search_query(); ?></p>
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <article <?php post_class();?>>
@@ -9,7 +9,10 @@
       <?php the_excerpt(); ?>
     </article>
   <?php endwhile; else: ?>
-    <p><?php _e('There are no search results here!','blvckbrd'); ?></p>
+    <p><?php _e('There are no search results here!','blackboard'); ?></p>
   <?php endif; ?>
+  
+  <?php echo paginate_links(); ?>
+
 
 <?php get_footer(); ?>

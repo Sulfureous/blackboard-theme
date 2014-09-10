@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: blackboard/author.php:44
+msgid "%1$s on %2$s"
+msgstr ""
+
+#. Text in function
+#: blackboard/category.php:3
+msgid "Category Archives: %s"
+msgstr ""
+
+#. Text in function
+#: blackboard/archive.php:6
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: blackboard/404.php:3
+msgid "Error 404"
+msgstr ""
+
+#. Text in function
+#: blackboard/archive.php:8
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: blackboard/author.php:49
+msgid "No comments by "
+msgstr ""
+
+#. Text in echo
+#: blackboard/comments.php:41
+msgid "No comments have been made yet."
+msgstr ""
+
+#. Text in echo
+#: blackboard/author.php:36
+msgid "No posts by "
+msgstr ""
+
+#. Text in echo
+#: blackboard/404.php:4
+msgid "Oh no, the page cannot be found."
+msgstr ""
+
+#. Text in echo
+#: blackboard/single.php:26
+msgid "Post Not Found!"
+msgstr ""
+
+#. Text in echo
+#: blackboard/author.php:39
+msgid "Recent Comments by "
+msgstr ""
+
+#. Text in echo
+#: blackboard/author.php:25
+msgid "Recent Posts by "
+msgstr ""
+
+#. Text in function
+#: blackboard/functions.php:1
+msgid "Sections &#151;"
+msgstr ""
+
+#. Text in function
+#: blackboard/tag.php:3
+msgid "Tag Archives: %s"
+msgstr ""
+
+#. Text in echo
+#: blackboard/attachment.php:10
+msgid "There are no file here?!"
+msgstr ""
+
+#. Text in echo
+#: blackboard/archive.php:24
+#: blackboard/index.php:10
+#: blackboard/tag.php:16
+#: blackboard/category.php:13
+msgid "There are no posts here?!"
+msgstr ""
+
+#. Text in echo
+#: blackboard/search.php:12
+msgid "There are no search results here!"
+msgstr ""
+
+#. Text in echo
+#: blackboard/page.php:14
+msgid "There is no page found here."
+msgstr ""
+
+#. Text in echo
+#: blackboard/archive.php:25
+#: blackboard/index.php:11
+#: blackboard/tag.php:17
+#: blackboard/page.php:15
+#: blackboard/attachment.php:11
+#: blackboard/category.php:14
+msgid "We apologize for any inconvenience, please go back on your browser."
+msgstr ""
+
+#. Text in function
+#: blackboard/archive.php:10
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: blackboard/search.php:3
+msgid "You searched for: "
+msgstr ""

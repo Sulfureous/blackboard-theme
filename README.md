@@ -16,6 +16,40 @@ The effort is by no means a complete idea yet but I plan to continue updating th
 Changelog
 ================
 
+__2.2 - September 10, 2014__
+
++ First and foremost, I modified a lot of code spacing and things like that in order to keep the coding style as consistent as possible. What this update did is help the validation of the theme so it's fully accepted by WordPress Theme Development standards and at the same time test well with the WordPress Theme Unit Test Environment.
++ Fixed the deprecated add_background tag and added the new add_theme_support tag with the 'custom-background' parameter.
++ Added the "Tags" tag to the style.css to comply with WordPress theme development standards.
++ Added the single post pagination, again to comply with WordPress theme development standards.
++ Added the Post Tags with the_tags(); inside the loop to comply with WordPress theme development standards.
++ Updated the previous version I forgot to document in the readme.md file (oops!)
++ Added the post navigation to comply with WordPress theme development standards.
++ Added the comment pagination to comply with WordPress theme development standards.
++ Updated the header.php and a couple of other files that were using bloginfo('template_url') to instead use echo get_template_directory_uri(); to comply with Wordpress theme development standards.
++ Added the readme.txt file to comply with WordPress theme development standards.
++ Added the add_editor_style theme support to remove the tinyMCE CSS from style.css and load it the way WordPress would prefer we do this.
++ Added the theme support for the automatic-feed-links to comply with the WordPress theme development standards.
++ Added the $content_width variable to my functions.php to be able to set a $content_width that is used by plugins and other things so it  doesn't break the theme, this is especially useful to set the size of the oEmbed feature... again, to comply with WordPress theme development standards.
++ Removed the trackback code from the functions that was for counting comments and trackbacks as it was causing an error.
++ Broke down the style.css into another file called editor-style.css to place the editor styles in compliance with WordPress Theme standards.
++ Added the comment-reply script that's required to be in compliance with WordPress Theme standards
++ Added a License for the Theme.
++ Commented out the Post Format because it's not implemented yet into the loops.
++ Added is_front_page condition to the <title> tag in order to display the frontpage name and blog name.
++ Fixed all the text-domain issues with not using the proper "slug" as WordPress recomments, so I replaced 'blvckbrd' with 'blackboard' to comply.
++ Added a couple of "usual" things to the header and the footer such as Site name, Site Description, Copyright year, etc, etc.
++ Added the pagination links wherever necessary, such as: index.php, archives.php, etc.
++ Added a default Blackboard Favicon that can easily be overwritten so it's linked and in place already.
++ Added post meta data to the single.php, it can easily be stripped out or pick any of the elements you would like to keep and use in your project.
++ Added the comments if statement for the page.php and the single.php so the comments show as they should.
++ Added the /lang/ folder with a Spanish translation and the es_MX.po and es_MX.mo as well as a clean en_US.po file to use for your own translation
++ Added the wp_nav_menu to the header and to the footer with all parameters in default except for the already defined location parameter.
+
+__2.1.1 - August 27, 2014__
+
++ Added Helper Classes to the CSS file
+
 __2.1 - August 22, 2014__
 
 + Started adding the stock WordPress CSS selectors; added the styles for the WYSIWYG editor

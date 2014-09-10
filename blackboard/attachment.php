@@ -7,8 +7,8 @@
       <?php the_content(); ?>
     </article>
   <?php endwhile; else: ?>
-    <p><?php _e('There are no file here?!', 'blvckbrd'); ?></p>
-    <p><?php _e('We apologize for any inconvenience, please go back on your browser.', 'blvckbrd'); ?></p>
+    <p><?php _e('There are no file here?!', 'blackboard'); ?></p>
+    <p><?php _e('We apologize for any inconvenience, please go back on your browser.', 'blackboard'); ?></p>
   <?php endif; ?>
 
 <?php get_footer(); ?>
