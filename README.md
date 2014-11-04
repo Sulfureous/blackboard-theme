@@ -16,6 +16,13 @@ The effort is by no means a complete idea yet but I plan to continue updating th
 Changelog
 ================
 
+__2.2.1 - November 4, 2014__
+
++ Added the function to make the theme translation ready (I realized I missed it on the last update, doh!)
++ Added placeholder for bootstrap and fontawesome on the functions.php so you just uncomment it to enable it (had do face it, I'm using it very much in 90% of my projects.)
++ Deleted a US translation file I had there for some reason, it's not needed, the theme in in English.
++ Updated a small translation on the Spanish .PO file.
+
 __2.2 - September 10, 2014__
 
 + First and foremost, I modified a lot of code spacing and things like that in order to keep the coding style as consistent as possible. What this update did is help the validation of the theme so it's fully accepted by WordPress Theme Development standards and at the same time test well with the WordPress Theme Unit Test Environment.

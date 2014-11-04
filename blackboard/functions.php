@@ -132,4 +132,20 @@ function custom_nextpage_links($defaults) {
 }
 add_filter('wp_link_pages_args','custom_nextpage_links');
 
+// Make the theme translation ready
+function theme_translation_setup(){
+	load_theme_textdomain('blackboard', get_template_directory().'/lang');
+}
+add_action('after_setup_theme', 'theme_translation_setup');
+
+// Include Scripts and CSS on the wp_head and wp_footer hooks. (uncomment if you wanna bootstrap!)
+/*
+function custom_enqueue_scripts() {
+	wp_enqueue_style( 'bootstrap-min', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' );
+	wp_enqueue_style( 'font-awesome-min', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' );
+	wp_enqueue_script( 'bootstrap-min', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array(), '3.2.0', true );
+}
+add_action( 'wp_enqueue_scripts', 'custom_enqueue_scripts' );
+*/
+
 ?>
