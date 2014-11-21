@@ -16,6 +16,13 @@ The effort is by no means a complete idea yet but I plan to continue updating th
 Changelog
 ================
 
+__2.2.2 - November 20, 2014__
+
++ Added the WordPress classes for the wp_nav_menu function.
++ Added CSS for the Responsive Videos and Responsive Maps.
++ Added some basic global styles that I generally use.
++ Added a list of plugins (to the readme.txt file of the theme) that I install to remind me to do so by fetching the new versions of those plugins.
+
 __2.2.1 - November 4, 2014__
 
 + Added the function to make the theme translation ready (I realized I missed it on the last update, doh!)

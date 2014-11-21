@@ -25,27 +25,6 @@ Version: 2.1.1
     
 */
 
-/*
-  =-=-=-=
-    Responsive Styles
-  =-=-=-=
-*/
-
-@media (max-width: 767px) { 
-	
-}
-
-@media (min-width: 768px) {
-	
-}
-
-@media (min-width: 992px) {
-	
-}
-
-@media (min-width: 1200px) {
-	
-}
 
 /*
   =-=-=-=
@@ -53,88 +32,135 @@ Version: 2.1.1
   =-=-=-=
 */
 
+* {
+	outline: none;
+}
+body {
+	color: #666;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
 /*
   =-=-=-=
     Helper Classes
   =-=-=-=
 */
  
+  /* =-=-=-= Responsive Maps =-=-=-= */
+ 
+  .mapCont {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+  .mapCont iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+ 
+  /* =-=-=-= Responsive Videos =-=-=-= */
+ 
+  .videoCont {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoCont iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ 
   /* =-=-=-= Font Helpers =-=-=-= */
   
   .smallness {
-    font-size: 10px;
+	  font-size: 10px;
   }
   .boldness {
-    font-weight: bold;
+	  font-weight: bold;
   }
   .italicness {
-    font-style: italic;
+	  font-style: italic;
   }
   .shadowness {
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+	  text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
   }
   .toUpper {
-    text-transform: uppercase;
+  	text-transform: uppercase;
   }
   .toLower {
-    text-transform: lowercase;
+	  text-transform: lowercase;
   }
   .toCapitalize {
-    text-transform: capitalize;
+	  text-transform: capitalize;
   }
   .highlightPrimary {
-    color: #f00;
+	  color: #f00;
   }
   .hightlightSecondary {
-    color: #100;
+	  color: #100;
   }
   
   /* =-=-=-= Alignment Helpers =-=-=-= */
   
   .alignLeft {
-    text-align: left;
+	  text-align: left;
   }
   .alignCenter {
-    text-align: center;
+	  text-align: center;
   }
   .alignRight {
-    text-align: right;
+	  text-align: right;
   }
   .alignMiddle {
-    vertical-align: middle;
+	  vertical-align: middle;
   }
   .floatLeft {
-    float: left;
+	  float: left;
   }
   .floatRight {
-    float: right;
+  	float: right;
   }
   .floatNone {
-    float: none;
+  	float: none;
   }
   
   /* =-=-=-= Custom Helpers =-=-=-= */
   
   .reqChar {
-    color: #f00;
+  	color: #f00;
   }
   .noMarPad {
-    margin: 0;
-    padding: 0;
+	  margin: 0;
+  	padding: 0;
   }
   .noMar {
-    margin: 0;
+	  margin: 0;
   }
   .noPad {
-    padding: 0;
+  	padding: 0;
   }
   .wrapCont {
-    background: #f2f2f2;
-    padding: 20px;
-    box-sizing: border-box;
+		background: #f2f2f2;
+		padding: 20px;
+		box-sizing: border-box;
   }
   .boxShadow {
-    box-shadow: 2px 0 10px rgba(0,0,0,0.25);
+	  box-shadow: 2px 0 10px rgba(0,0,0,0.25);
   }
   
 /*
@@ -185,10 +211,20 @@ Version: 2.1.1
   =-=-=-=
 */
 
+  /* =-=-=-= Function: wp_nav_menu Classes =-=-=-= */
+
+  .current_page_item { }
+	.page_item { }
+	.menu-item { }
+  .current-menu-item { }
+	.current-menu-ancestor { }
+	.current-menu-parent { }
+	.menu-item-has-children { }
+
   /* =-=-=-= Required WordPress Classes =-=-=-= */
   
   .sticky {
-	background: rgba(0,0,0,0.2);
+	  background: rgba(0,0,0,0.2);
   }
   .post {
     word-wrap: break-word;
@@ -236,3 +272,25 @@ Version: 2.1.1
   ol.commentlist li.comment ol.children li.depth-4 { }
   ol.commentlist li.comment ol.children li.depth-5 { }
   ol.commentlist li.comment ol.children li.odd { }
+	
+/*
+  =-=-=-=
+    Responsive Styles
+  =-=-=-=
+*/
+
+@media (max-width: 767px) { 
+	
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 992px) {
+	
+}
+
+@media (min-width: 1200px) {
+	
+}
